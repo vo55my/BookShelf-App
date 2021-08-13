@@ -1,0 +1,324 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+body,
+input,
+button {
+  font-family: "Baloo Chettan 2", cursive;
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+header {
+	display: inline;
+}
+
+.clear {
+	clear: both;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+hr {
+  color: #f8485e;
+}
+
+.navbar {
+	font-size: 15px;
+  padding: 30px;
+	background: #f8485e;
+	text-align: center;
+	color: white;
+}
+
+.navbar .book-icon {
+  margin-right: 15px;
+}
+
+.book-icon {
+  height: 30px;
+	width: 28px;
+	padding-top: 4px;
+	background-size: cover;
+  margin: 0 auto;
+}
+
+
+main {
+  overflow: auto;
+	background: #512d6d;
+}
+
+*#content {
+	max-width: 100%;
+	max-height: 100%;
+	overflow: auto;
+  margin: 0 auto;
+	float: left;
+  width: 50%;
+	padding: 20px;
+	place-items: center;
+}
+
+aside {
+  float: right;
+  width: 50%;
+	margin-top: 70px;
+	padding-right: 20px;
+}
+
+.main-1 {
+	border-radius: 5px;
+  margin: 50px 5px;
+	height: 390px;
+}
+
+.main-2 {
+  border-radius: 5px;
+  margin: 50px 5px;
+	height: 420px;
+	overflow: auto;
+}
+
+.aside-1 {
+  border-radius: 5px;
+  margin: 0 auto;
+	height: 390px;
+	text-align: justify;
+	overflow: auto;
+	margin: 0px 5px 50px 5px;
+}
+
+.aside-2 {
+	border-radius: 5px;
+  margin: 0 auto;
+	height: 420px;
+	text-align: justify;
+	overflow: auto;
+	margin: 0px 5px 50px 5px;
+}
+
+.input_section h2 {
+	padding-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.input_section #inputBook {
+  padding: 15px;
+}
+
+.input_section form .input {
+  margin: 8px 0;
+}
+
+.input_section form button {
+  background: #00c1d4;
+  color: white;
+  border: 2px black solid;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.input_section form button:hover {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.input_section form button span {
+  font-weight: bold;
+}
+
+.input_section form .input input {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.input_section form .input label {
+  color: white;
+  font-weight: bold;
+}
+
+.input_section form .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section form .input_inline label {
+  color: white;
+  font-weight: bold;
+}
+
+.input_section form .input_inline input {
+	margin-right: 10px;
+}
+
+.search_section h2 {
+	padding-top: 15px;
+  color: white;
+}
+
+.search_section form {
+  padding: 15px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;  
+}
+
+.search_section form input {
+  padding: 5px 110px 5px 5px;
+  border-radius: 5px;
+}
+
+.search_section form button {
+  background: #00c1d4;
+  border: 2px black solid;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+}
+
+.search_section form button:hover {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.search_section form label {
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.book_shelf h2 {
+	padding-top: 20px;
+  color: white;
+}
+
+.book_shelf .book_list {
+  padding: 15px;
+}
+
+.book_shelf .book_list .book_item {
+  padding: 8px 16px 16px;
+  background: #00c1d4;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.book_shelf .book_list .book_item:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.book_shelf .book_list .book_item h3,
+p {
+  margin: 8px 0;
+  overflow: auto;
+  word-wrap: break-word;
+}
+
+.book_shelf .book_list .book_item .action button {
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book_shelf .book_list .book_item .ket span {
+	padding: 5px;
+	background: #00c1d4;
+  font-size: 14px;
+  border-radius: 5px;
+	max-height: 100%;
+	width: 100%;
+  color: white;
+}
+
+.book_shelf .book_list .book_item .search {
+	margin-bottom: 25px;
+	padding: 5px;
+	background: #00c1d4;
+	font-size: 14px;
+  border-radius: 5px;
+	max-height: 100%;
+	width: 100%;
+  color: white;
+}
+
+.book_shelf .book_list .book_item .action .green {
+  background: green;
+  color: white;
+}
+
+.book_shelf .book_list .book_item .action .red {
+	background: rgb(221, 32, 11);
+  color: white;
+}
+
+.book_shelf .book_list .book_item .action .green:hover {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.book_shelf .book_list .book_item .action .red:hover {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+small {
+  color: red;
+}
+
+.error-display {
+  display: none;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background: #f8485e;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container-footer p {
+	text-align: center;
+}
+
+/* Tablet */
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+      width: 100%;
+      padding: 0;
+  }
+}
+
+/* Smartphone */
+@media only screen and (max-width: 300px) {
+	.text {
+		font-size: 11px
+	}
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="assets/img/books.png">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap" rel="stylesheet">
+		<title>Bookshelf Apps</title>
+	</head>
+<body>
+
+	<!-- Header Section -->
+	<header>
+		<div class="navbar">
+			<h1><img class="book-icon" src="assets/img/books.png"><span>Bookshelf Apps</span></h1>
+		</div>
+	</header>
+
+	<!-- Body Section -->
+	<main>
+		<div id="content">
+			<article class="main-1">
+				<section class="input_section" id="inputSection">
+					<h2 id="InputSection">Masukkan Buku Baru<hr></h2>
+					<form id="inputBook">
+						<div class="input" id="sectionTitle">
+							<label for="inputBookTitle">Judul Buku</label>
+							<input id="inputBookTitle" type="text" autocomplete="off">
+							<small class="error-display" id="errorTitle">Wajib Diisi</small>
+						</div>
+						<div class="input" id="sectionAuthor">
+							<label for="inputBookAuthor">Penulis Buku</label>
+							<input id="inputBookAuthor" type="text" autocomplete="off">
+							<small class="error-display" id="errorAuthor">Wajib Diisi</small>
+						</div>
+						<div class="input" id="sectionYear">
+							<label for="inputBookYear">Tahun Penerbit</label>
+							<input id="inputBookYear" type="number">
+							<small class="error-display" id="errorYear">Wajib Diisi</small>
+						</div>
+						<div class="input_inline">
+							<input id="inputBookIsComplete" type="checkbox">
+							<label for="inputBookIsComplete">Selesai dibaca</label>
+						</div>
+						<button id="bookSubmit" type="button"><span>Masukkan Buku</span></button>
+					</form>
+				</section>
+			</article>
+		
+			<article class="main-2">
+				<section class="search_section book_shelf" id="searchSection">
+					<h2 id="searchSectionH2">Cari Buku<hr></h2>
+					<form id="searchBook">
+						<input id="searchBookTitle" type="text" autocomplete="off">
+						<button id="searchSubmit" type="submit"><span>Cari</span></button>
+					</form>
+					<div id="searchResult" class="book_list" style="width: 100%"></div>
+				</section>
+			</article>
+		</div>
+			
+		<aside>
+			<article class="aside-1">
+				<section class="book_shelf" id="bookShelfUncompleted">
+					<h2 id="uncompletedH2">Belum selesai dibaca<hr></h2>
+					<div id="incompleteBookshelfList" class="book_list"></div>
+				</section>
+			</article>
+
+			<article class="aside-2">
+				<section class="book_shelf" id="bookShelfCompleted">
+					<h2 id="completed">Selesai dibaca<hr></h2>
+					<div id="completeBookshelfList" class="book_list"></div>
+				</section>
+			</article>
+		</aside>
+	</main>
+
+	<!-- Footer Section -->
+	<footer>
+		<article class="container-footer">
+			<p>Copyright © 2021 | All rights Reserved Bookshelf Apps</p>
+		</article>
+	</footer>
+
+	<!-- Javascript -->
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/data.js"></script>
+	<script src="assets/js/search.js"></script>
+	<script src="assets/js/swap.js"></script>
+</body>
+</html>
