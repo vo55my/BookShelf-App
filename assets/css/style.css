@@ -97,7 +97,6 @@ aside {
   margin: 0 auto;
 	height: 390px;
 	text-align: justify;
-	overflow: auto;
 	margin: 0px 5px 50px 5px;
 }
 
@@ -106,8 +105,14 @@ aside {
   margin: 0 auto;
 	height: 420px;
 	text-align: justify;
-	overflow: auto;
 	margin: 0px 5px 50px 5px;
+}
+
+#incompleteBookshelfList,
+#completeBookshelfList {
+  width: 100%;
+  height: 300px;
+  overflow: auto;
 }
 
 .input_section h2 {

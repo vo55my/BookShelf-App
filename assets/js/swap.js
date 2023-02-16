@@ -1,5 +1,5 @@
 function readedBook(id) {
-    let cfm = confirm("Pindahkan buku ke rak selesai dibaca ?");
+    let cfm = confirm("Pindahkan buku ke rak selesai dibaca?");
 
     if (cfm == true) {
         const bookDataDetail = getData().filter(a => a.id == id);
@@ -21,7 +21,7 @@ function readedBook(id) {
 }
 
 function unreadedBook(id) {
-    let cfm = confirm("Pindahkan buku ke rak belum selesai dibaca ?")
+    let cfm = confirm("Pindahkan buku ke rak belum selesai dibaca?")
 
     if (cfm == true) {
         const bookDataDetail = getData().filter(a => a.id == id);

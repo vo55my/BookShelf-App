@@ -69,7 +69,7 @@ function showData(books = []) {
 }
 
 function deleteBook(id) {
-    let cfm = confirm("Anda yakin akan menghapus buku ini ?");
+    let cfm = confirm("Anda yakin akan menghapus buku ini?");
 
     if (cfm == true) {
         const bookDataDetail = getData().filter(a => a.id == id);
