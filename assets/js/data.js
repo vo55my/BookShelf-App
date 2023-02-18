@@ -2,10 +2,10 @@ function insertData(book) {
     let bookData = [];
 
     if (!localStorage.getItem(localStorageKey)) {
-        alert('Buku gagal ditambahkan');
+        Swal.fire('Buku gagal ditambahkan');
         localStorage.setItem(localStorageKey, 0);
     } else {
-        alert('Buku berhasil ditambahkan');
+        Swal.fire('Buku berhasil ditambahkan');
         bookData = JSON.parse(localStorage.getItem(localStorageKey));
     }
 
@@ -76,7 +76,7 @@ function deleteBook(id) {
         const bookData = getData().filter(a => a.id != id);
         localStorage.setItem(localStorageKey,JSON.stringify(bookData));
         showData(getData());
-        alert(`[Buku ${bookDataDetail[0].title}] telah dihapus dari rak`);
+        Swal.fire(`[Buku ${bookDataDetail[0].title}] telah dihapus dari rak`);
     } else {
         return 0;
     }
